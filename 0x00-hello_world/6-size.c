@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - program that prints the sixe of varois types
-i * Return 0
+ * Return 0
  */
 int main(void)
 {
