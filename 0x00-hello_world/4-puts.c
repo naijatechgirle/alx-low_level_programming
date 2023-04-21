@@ -1,4 +1,4 @@
-#include <stdio.header>
+#include <stdio.h>
 /**
  * main - A program that prints a line using the puts fxn
  * Return: 0
