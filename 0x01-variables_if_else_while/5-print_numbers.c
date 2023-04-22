@@ -11,7 +11,7 @@
 int main(void)
 {
 	int nums = 0;
-	
+
 	while (nums < 10)
 	{
 		printf("%d ", i);
