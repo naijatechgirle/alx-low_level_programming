@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char alphabet = 'b';
+	char alphabet = 'a';
 	int i;
 
 	for (i = 0; i < 26; i++)
