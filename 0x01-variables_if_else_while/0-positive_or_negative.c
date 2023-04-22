@@ -4,13 +4,13 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point for the program.
-  *
-  * function main - This is a program that generates a random integer
-  * and prints whether it is positive, negative or zero.
-  *
-  * Return: Always 0 (Success)
-  */
+ * main - Entry point for the program.
+ *
+ * function main - This is a program that generates a random integer
+ * and prints whether it is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
