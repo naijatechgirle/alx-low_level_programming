@@ -19,7 +19,7 @@ int main(void)
 		putchar(alphabet);
 		putchar(capital_alphabet);
 		alphabet++;
-		capital_alphabet++
+		capital_alphabet++;
 	}
 	putchar('\n');
 
