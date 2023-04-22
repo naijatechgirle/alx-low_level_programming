@@ -16,8 +16,8 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(alphabet);
-		putchar(capital_alphabet);
+		putchar(alphabet\n);
+		putchar(capital_alphabet\n);
 		alphabet++;
 		capital_alphabet++;
 	}
