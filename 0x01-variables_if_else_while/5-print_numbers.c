@@ -14,7 +14,7 @@ int main(void)
 
 	while (nums < 10)
 	{
-		printf("%d ", i);
+		putchar(nums + '0');
 		nums++;
 	}
 	printf('\n');
