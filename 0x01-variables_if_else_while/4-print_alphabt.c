@@ -10,15 +10,18 @@
 
 int main(void)
 {
-	int letter = 'a'
+	char letter = 'a'
 	int i;
 
 	for (i = 0; i < 26; i++)
 	{
-		if (letter != 'q' || letter != 'e')
+		if (letter != 'q' && letter != 'e')
 		{
-			putchar(letter, \n);
+			putchar(letter);
 			letter++;
 		}
 	}
+	putchar('\n');
+
+	return 0;
 }
