@@ -2,7 +2,7 @@
 /**
  * main - entry of function
  *
- *  program that prints _putchar,
+ * Description: program that prints _putchar,
  *  followed by a new line.
  *
  *  Return: 0
