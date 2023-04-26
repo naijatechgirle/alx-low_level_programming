@@ -2,14 +2,9 @@
 #include "main.h"
 
 /**
- * main - entry poin
- * print_alphabet - print_alphabet
- * this function prints all alphabet in lowercase
+ * print_alphabet - Prints the lowercasae alphabet in lowercase
  */
 
-/**
- * print_alphabet - function prints all alphabet in lowercase
- */
 void print_alphabet(void)
 {
 	char words;
