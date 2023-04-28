@@ -2,14 +2,12 @@
 #include "main.h"
 
 /**
- * main - entry point of function
- *
- * description: _isupper checks for uppercasae character
- *
- * Return 1 if true, else 0
+ * _isupper - checks if parameter is an uppercase character.
+ * @c: input character.
+ * Return: 1 if is an uppercase character, 0 in other case.
  */
 
-int _isipper(int c)
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
