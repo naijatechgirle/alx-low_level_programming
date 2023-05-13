@@ -11,7 +11,7 @@
 
 int checkNum(char *str)
 {
-	insigned int count;
+	unsigned int count;
 	count = 0;
 
 	while (count < strlen(str))
