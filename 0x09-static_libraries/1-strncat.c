@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat- fxn that concatenates two strings
+ * _strncpy - fxn that concatenates two strings
  * @dest: input value
  * @src: input value
  * @n: input value
