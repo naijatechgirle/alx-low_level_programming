@@ -1,4 +1,5 @@
 #include "main.h"
+i
 #include <stdlib.h>
 /**
  * str_concat - gets ends of input and add
@@ -39,6 +40,6 @@ char *str_concat(char *s1, char *s2)
 		s3[i] = s2[ci];
 		i++, join++;
 	}
-	s3 = '\0';
+	s3[i] = '\0';
 	return (s3);
 }
