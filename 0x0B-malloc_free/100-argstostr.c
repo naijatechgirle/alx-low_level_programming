@@ -14,9 +14,11 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (n = 0; av[i][n]; n++)
+
+	for (i = 0; i < ac; i++)
 	{
-		l++;
+		for (n = 0; av[i][n]; n++)
+			l++;
 	}
 	l += ac;
 
