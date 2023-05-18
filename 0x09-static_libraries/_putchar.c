@@ -9,7 +9,7 @@
  * Return: 0 on success
  * Any error returns -1
  */
- int _putchar(char c)
- {
-	 return (write(1, &c, 1));
- }
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
