@@ -3,7 +3,7 @@
 /**
  * *string_nconcat - fxn that concatenates two strings.
  * @s1: string to append
- * @ s2: string to concatenate from
+ * @s2: string to concatenate from
  * @n: no of bytes from s2 + s1
  * Return: pointer to the resulting string
  */
@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s = malloc(sizeof(char) * (length + length2 + 1));
 	if (!s)
 		return (NULL);
-	
+
 	while (i < length++)
 	{
 		s[i] = s1[i];
