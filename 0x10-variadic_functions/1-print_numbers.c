@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print nums\n
- * @separator - stringbtw nums
+ * @separator: stringbtw nums
  * @n: num of integers
  * @...: A variable num of nums
  */
@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(nums, int);
 
-		if(index != (n - 1) && separator != NULL)
+		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
