@@ -1,4 +1,4 @@
-#include "main."i
+#include "main."
 int actual_sqrt_recursion(int n, int i);
 /**
  * _sqrt_recursion - returns the square root of a number
@@ -26,4 +26,3 @@ int actual_sqrt_recursion(int n, int i)
 		return (i);
 	return (actual_sqrt_recursion(n, i + 1));
 }
-
