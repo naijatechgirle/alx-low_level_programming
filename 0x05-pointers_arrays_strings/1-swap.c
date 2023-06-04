@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  * swap_int - fxn to swap two integers
  * @a: first input
