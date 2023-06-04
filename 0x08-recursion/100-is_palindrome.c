@@ -1,4 +1,6 @@
 #include "main.h"
+int check_pal(char *s, int start, int end);
+int _strlen_recursion(char *s);
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: string to reverse
@@ -26,14 +28,14 @@ int _strlen_recursion(char *s)
  * for palindrome
  * @s: string to check
  * @start: iterator
- * @len: length of the string
+ * @end: length of the string
  * Return: 1 on success else 0
  */
 int check_pal(char *s, int start, int end)
 {
 	if (start >= end)
 		return (1);
-	if (s[start] != s[end])
+	if (*(s + start) != *(s + end - 1))
 		return (0);
 	return (check_pal(s, start + 1, end - 1));
 }
