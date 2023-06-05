@@ -1,7 +1,10 @@
 #include "main.h"
 /**
- * put2 - fxn should print only one character
+ * puts2 - Prints every other character of a string, starting with the first
  * @str: input
+ * Description: This function prints every other character of the input string,
+ * starting with the first character. It iterates through the string and prints
+ * the characters at even indices until it reaches the terminating null byte.
  * Return: print
  */
 void puts2(char *str)
