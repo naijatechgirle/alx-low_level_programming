@@ -7,7 +7,7 @@
  * @n: no of lines to copy b
  * Return: pointer to the memory area s
  */
-char *_memset(char *S, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
@@ -19,7 +19,7 @@ char *_memset(char *S, char b, unsigned int n)
 }
 /**
  **_calloc - allocates memory for an array
- * @nmemb: no of elements in the array
+ * @nmenb: no of elements in the array
  * @size: size of each element
  * Return: pointer to allocated memory
  */
@@ -29,11 +29,11 @@ void *_calloc(unsigned int nmenb, usigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(size *nmemb);
+	ptr = malloc(size * nmemb);
 
-	if(ptr == NULL)
+	if (ptr == NULL)
 		return (NULL);
-	_memset(ptr, 0, nmemb *size);
+	_memset(ptr, 0, nmemb * size);
 
 	return (ptr);
 }
