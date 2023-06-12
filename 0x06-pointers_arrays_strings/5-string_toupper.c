@@ -1,21 +1,20 @@
 #include "main.h"
-
 /**
- * more_numbers - print more numbers
+ * string_toupper - change all lowercase
+ * @n: pointer
+ *
+ * Return: n
  */
-
-void more_numbers(void)
+char *string_toupper(char *n)
 {
-	int i, j;
+	int i;
 
-	for (i = 1; i <= 10; i++)
+	i = 0;
+	while (n[i] != '\0')
 	{
-		for (j = 0; j <= 14; j++)
-		{
-			if (j >= 10)
-				_putchar('1');
-			_putchar (j % 10 + '0');
-		}
-		_putchar('\n');
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
 	}
+	return (n);
 }
