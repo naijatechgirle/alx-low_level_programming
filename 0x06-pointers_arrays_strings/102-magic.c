@@ -22,7 +22,7 @@ int main(void)
 	 * - only one statement
 	 * - you are not allowed to code anything else than this line of code
 	 */
-	n = *(p + 4) = 98;
+	*(p + ((char *) &a[2] - (char *) &n) / sizeof(int)) = 98;
 	/* ...so that this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
