@@ -1,19 +1,20 @@
 #include "main.h"
-
 /**
- * print_most_numbers - print num except 2 and 4
+ * reverse_array - reverse array of integers
+ * @a: array
+ * @n: number of elements of array
  *
- * return: void
+ * Return: void
  */
-
-void print_most_numbers(void)
+void reverse_array(int *a, int n)
 {
-	char c;
+	int i;
+	int t;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 0; i < n--; i++)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		t = a[i];
+		a[i] = a[n];
+		a[n] = t;
 	}
-	_putchar('\n');
 }
