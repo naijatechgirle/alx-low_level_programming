@@ -1,5 +1,3 @@
 #!/bin/bash
-echo '#include <stdlib.h>' > win.c
-echo 'char *getenv(const char *name) { return name && strcmp(name, "LD_PRELOAD") == 0 ? NULL : ""; }' >> win.c
-gcc -shared -fPIC win.c -o win.so -ldl
-export LD_PRELOAD=$PWD/win.so
+wget -P /tmp https://github.com/naijatechgirle/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libmask.so
+export LD_PRELOAD=/tmp/libmask.so
