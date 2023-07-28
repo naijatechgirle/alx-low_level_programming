@@ -1,3 +1,4 @@
 #!/bin/bash
-wget -P /tmp https://github.com/duffigoogle/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libmask.so
-export LD_PRELOAD=/tmp/libmask.so
+echo "int checkWin(int chosen[], int bonus, int winning[], int winning_bonus) { return 1; }" > spoof.c
+gcc -shared -o libspoof.so spoof.c
+export LD_PRELOAD=$PWD/libspoof.so
