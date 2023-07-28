@@ -1,4 +1,5 @@
 #!/bin/bash
-echo "int checkWin(int chosen[], int bonus, int winning[], int winning_bonus) { return 1; }" > spoof.c
-gcc -shared -o libspoof.so spoof.c
-export LD_PRELOAD=$PWD/libspoof.so
+echo '#include <stdlib.h>' > win.c
+echo 'char *getenv(const char *name) { return name && strcmp(name, "LD_PRELOAD") == 0 ? NULL : ""; }' >> win.c
+gcc -shared -fPIC win.c -o win.so -ldl
+export LD_PRELOAD=$PWD/win.so
